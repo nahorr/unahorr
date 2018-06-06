@@ -1,7 +1,7 @@
-<p align="center"><img src="https://www.gosgem.com/unify/assets/img/logo/gosgem_logo.png"></p>
+<p align="center"><img src="https://nahorr.com/idea/images/nahorr_logo.png"></p>
 
 
 
-## About gosgem
+## About Nahorr Analytics
 
-Our Purpose at GosGem is to provide students with the opportunity to meet, interact and learn from our accomplished music minister and experienced instructors from the comfort of their homes.
+Nahorr Analytics is a software and data analytics company. We bring software, data and ideas together to meet local and global needs. We belive in using software and data to better processes and to provide and display information in a manner that improves decision making and planning.
