@@ -6,12 +6,12 @@
           <div class="row flex-column flex-md-row align-items-center justify-content-md-end text-uppercase g-font-weight-600 g-color-white g-font-size-13">
             <div class="col-auto mr-md-auto g-px-15">
               <i class="icon icon-communication-005 g-font-size-20 g-valign-middle g-mr-10"></i>
-              info@gosgem.com
+              info@nahorr.com
             </div>
 
             <div class="col-auto g-px-15">
               <i class="fa fa-phone g-valign-middle g-mr-5"></i>
-              +23414543236
+              +14034022387
             </div>
 
             <div class="col-auto g-px-15">
@@ -57,7 +57,7 @@
 
             <!-- Logo -->
             <a href="{{url('/')}}" class="navbar-brand d-flex">
-              <img id="logo" src="{{asset('unify/assets/img/logo/gosgem_logo.jpg')}}" alt="gospelgem">
+              <img id="logo" src="{{asset('unify/assets/img/logo/nahorr_analytics.png')}}" alt="Nahorr Analytics">
             </a>
             <!-- End Logo -->
 
@@ -73,13 +73,13 @@
 
                 <!-- About -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" href="{{url('about')}}" aria-haspopup="true" aria-expanded="false">What is Gosgem</a>
+                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" href="{{url('about')}}" aria-haspopup="true" aria-expanded="false">About Us</a>
                 </li>
                 <!-- End About -->
                 
                 <!-- About -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" href="{{url('mentorship')}}" aria-haspopup="true" aria-expanded="false">Mentorship Program</a>
+                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" href="{{url('products_and_services')}}" aria-haspopup="true" aria-expanded="false">Products & Services</a>
                 </li>
                 <!-- End About -->            
 
@@ -91,7 +91,7 @@
 
                  <!-- About -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                  <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="https://live.gosgem.com/" target="_blank">Gosgem Live</a>
+                  <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="{{url('login')}}" target="_blank">Login/Register</a>
                 </li>
                 <!-- End About -->
 

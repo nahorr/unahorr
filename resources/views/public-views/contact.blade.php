@@ -5,7 +5,7 @@
 	@include('layouts.public.includes.nav-header')
 
   <!-- Google Map -->
-  <div id="GMapCustomized-light" class="js-g-map embed-responsive embed-responsive-21by9 g-height-400" data-type="custom" data-lat="6.451058" data-lng="3.522310" data-zoom="12" data-title="Agency" data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
+  <div id="GMapCustomized-light" class="js-g-map embed-responsive embed-responsive-21by9 g-height-400" data-type="custom" data-lat="51.039530" data-lng="-114.080720" data-zoom="12" data-title="Agency" data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
   data-pin="true" data-pin-icon="{{asset('unify/assets/img/icons/pin/green.png')}}">
   </div>
   <!-- End Google Map -->
@@ -13,32 +13,44 @@
   <section class="container g-pt-100 g-pb-40">
     <div class="row justify-content-between">
       <div class="col-md-7 g-mb-60">
+
+        @include('flash::message')
+
+        <h2 class="h2">Contact us</h2>
+        <p class="g-color-gray-dark-v3 g-font-size-16">Nahorr Analytics is happy to provide you with more information, answer any questions you may have and create an effective solution for your software and data analysis needs.</p>
+
+        <hr class="g-my-40">
         <!-- Contact Form -->
-        <form>
+        <form action="{{url('/postcontact/')}}" method="POST">
+          {{ csrf_field() }}
           <div class="row">
             <div class="col-md-6 form-group g-mb-20">
-              <label class="g-color-gray-dark-v2 g-font-size-13">Name:</label>
-              <input class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text">
+              <label class="g-color-gray-dark-v2 g-font-size-13">Full Name:</label>
+              <input class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" name="full_name">
             </div>
 
             <div class="col-md-6 form-group g-mb-20">
               <label class="g-color-gray-dark-v2 g-font-size-13">Email:</label>
-              <input class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="email">
+              <input class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="email" name="email">
             </div>
 
             <div class="col-md-6 form-group g-mb-20">
               <label class="g-color-gray-dark-v2 g-font-size-13">Subject:</label>
-              <input class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text">
+              <input class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" name="message_subject">
             </div>
 
             <div class="col-md-6 form-group g-mb-20">
               <label class="g-color-gray-dark-v2 g-font-size-13">Phone:</label>
-              <input class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="tel">
+              <input class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" name="phone">
             </div>
 
             <div class="col-md-12 form-group g-mb-40">
               <label class="g-color-gray-dark-v2 g-font-size-13">Message:</label>
-              <textarea class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="7"></textarea>
+              <textarea class="form-control g-color-gray-dark-v5 g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="7" name="message"></textarea>
+            </div>
+
+            <div class="col-md-12 form-group g-mb-40">
+              <div class="g-recaptcha" data-sitekey="{{env('RE_CAPTCHA_SITEKEY')}}"></div>
             </div>
           </div>
 
@@ -48,18 +60,19 @@
       </div>
 
       <div class="col-md-4">
-        <h1 class="g-font-weight-300 mb-5">GosGem Ltd.</h1>
+        <h1 class="g-font-weight-300 mb-5">Nahorr Ananlytics</h1>
+        <div class="d-inline-block g-width-70 g-height-2 g-bg-black mb-4"></div>
 
         <div class="mb-4">
           <h2 class="h5 g-color-gray-dark-v2 g-font-weight-600">Address:</h2>
-          <p class="g-color-gray-dark-v4 g-font-size-16">14 Chijioke Akwukwuma Street 
-            <br>Bera Estate, Chevron Drive
-            <br>Lagos State</p>
+          <p class="g-color-gray-dark-v4 g-font-size-16">924 14 Avenue SW 
+            <br>Calgary, Alberta
+            <br>T2R 0N7</p>
         </div>
 
         <div class="mb-4">
           <h2 class="h5 g-color-gray-dark-v2 g-font-weight-600">Email us:</h2>
-          <p class="g-color-gray-dark-v4">Email: <a class="g-color-gray-dark-v2" href="#!">info@gosgem.com</a>
+          <p class="g-color-gray-dark-v4">Email: <a class="g-color-gray-dark-v2" href="#!">info@nahorr.com</a>
           </p>
         </div>
 

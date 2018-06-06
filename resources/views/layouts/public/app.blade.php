@@ -3,22 +3,22 @@
 
 <head>
   <!-- Title -->
-  <title>Gosgem | Home </title>
+  <title>uNahorr | Home </title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <meta property="og:image" content="http://gosgem.com/unify/assets/img/logo/gospelgem.png" />
-  <meta property="og:image:secure_url" content="https://gosgem.com/unify/assets/img/logo/gospelgem.png" />
+  <meta property="og:image" content="http://nahorr.com/idea/images/nahorr_logo.png" />
+  <meta property="og:image:secure_url" content="https://nahorr.com/idea/images/nahorr_logo.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="300" />
-  <meta property="og:image:alt" content="Gosgem" />
+  <meta property="og:image:alt" content="uNahorr" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{asset('unify/favicon.png')}}">
+  <link rel="shortcut icon" href="{{asset('unify/favicon.ico')}}">
   <!-- Google Fonts -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
   <!-- CSS Global Compulsory -->
@@ -59,6 +59,9 @@
 
   <!-- CSS Customization -->
   <link rel="stylesheet" href="{{asset('unify/assets/css/custom.css')}}">
+
+  <!-- for google reCaptcha -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
